@@ -16,6 +16,8 @@ function ProductDescriptionPage() {
     const navigate = useNavigate(); // Initialize useNavigate
     const [clickedProduct, setClickedProduct] = useState(null);
     const [productNavButton, setProductNavButton] = useState('productDescription');
+    const [isFavorited, setIsFavorited] = useState(false);
+    const [isSelected, setIsSelected] = useState(product.image[0]);
 
     useEffect(() => {
         if (product) {
@@ -35,7 +37,7 @@ function ProductDescriptionPage() {
                 <div className=' p-2.5 md:p-5 bg-white-smoke'>
                     <h1 className='font-bold text-3xl mb-5'>{clickedProduct.name}</h1>
                     <div className='md:flex gap-5 mb-5 max-w-96'>   
-                        <img src={clickedProduct.image} alt={clickedProduct.name} className=' shadow-md ' />
+                        <img src={isSelected} alt={clickedProduct.name} className=' shadow-md ' />
                         <div className='flex flex-col gap-5 mt-5'>
                             <div className='flex gap-5 '>
                                 <div className=' md:p-5 flex flex-col gap-5 w-60 border border-light-brown shadow-md'>
@@ -55,11 +57,9 @@ function ProductDescriptionPage() {
                             
                             </div>
                             <div className='more-images flex gap-5'>
-                                <img src={clickedProduct.image} alt={clickedProduct.name} className='max-w-20 shadow-md ' />
-                                <img src={clickedProduct.image} alt={clickedProduct.name} className='max-w-20 shadow-md ' /> 
-                                <img src={clickedProduct.image} alt={clickedProduct.name} className='max-w-20 shadow-md ' />
-                                <img src={clickedProduct.image} alt={clickedProduct.name} className='max-w-20 shadow-md ' /> 
-
+                                {product.image.map((image) =>{
+                                     return <img key={image} src={image} alt={clickedProduct.name} className='max-w-20 shadow-md ' onClick={() => setIsSelected(image)} />
+                                })}
                             </div>
                         </div>
                         

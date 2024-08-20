@@ -12,7 +12,11 @@ const productsArray = [
       name: 'product 1',
       price: '1000',
       color: 'green',
-      image: 'https://i.imgur.com/UsFIvYs.jpeg',
+      image:  [
+        "https://i.imgur.com/R3iobJA.jpeg",
+        "https://i.imgur.com/Wv2KTsf.jpeg",
+        "https://i.imgur.com/76HAxcA.jpeg"
+    ], 
       starReviews: 3,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
@@ -27,7 +31,11 @@ const productsArray = [
       name: 'product 2',
       price: '500',
       color: 'blue',
-      image: 'https://i.imgur.com/QkIa5tT.jpeg',
+      image: [
+        "https://i.imgur.com/cBuLvBi.jpeg",
+        "https://i.imgur.com/N1GkCIR.jpeg",
+        "https://i.imgur.com/kKc9A5p.jpeg"
+    ],
       starReviews: 4,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
@@ -41,7 +49,11 @@ const productsArray = [
       name: 'product 3',
       price: '4000',
       color: 'orange',
-      image: 'https://i.imgur.com/ZKGofuB.jpeg',
+      image: [
+        "https://i.imgur.com/KeqG6r4.jpeg",
+        "https://i.imgur.com/xGQOw3p.jpeg",
+        "https://i.imgur.com/oO5OUjb.jpeg"
+    ],
       starReviews: 5,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
@@ -55,7 +67,11 @@ const productsArray = [
       name: 'product 4',
       price: '7000',
       color: 'yellow',
-      image: 'https://i.imgur.com/R2PN9Wq.jpeg',
+      image: [
+        "https://i.imgur.com/Y54Bt8J.jpeg",
+        "https://i.imgur.com/SZPDSgy.jpeg",
+        "https://i.imgur.com/sJv4Xx0.jpeg"
+    ],
       starReviews: 2,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
@@ -70,7 +86,11 @@ const productsArray = [
       name: 'product 5',
       price: '600',
       color: 'brown',
-      image: 'https://i.imgur.com/mp3rUty.jpeg',
+      image: [
+        "https://i.imgur.com/9DqEOV5.jpeg",
+        "https://i.imgur.com/ae0AEYn.jpeg",
+        "https://i.imgur.com/mZ4rUjj.jpeg"
+    ],
       starReviews: 4,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
@@ -84,7 +104,11 @@ const productsArray = [
       name: 'product 6',
       price: '2000',
       color: 'lemon',
-      image: 'https://i.imgur.com/9LFjwpI.jpeg',
+      image: [
+        "https://i.imgur.com/ZANVnHE.jpeg",
+        "https://i.imgur.com/Ro5z6Tn.jpeg",
+        "https://i.imgur.com/woA93Li.jpeg"
+    ],
       starReviews: 1,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
@@ -98,7 +122,11 @@ const productsArray = [
       name: 'product 7',
       price: '1000',
       color: 'deep blue',
-      image: 'https://i.imgur.com/R3iobJA.jpeg',
+      image: [
+        "https://i.imgur.com/yVeIeDa.jpeg",
+        "https://i.imgur.com/jByJ4ih.jpeg",
+        "https://i.imgur.com/KXj6Tpb.jpeg"
+    ],
       starReviews: 4,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
@@ -112,7 +140,11 @@ const productsArray = [
       name: 'product 8',
       price: '5000',
       color: 'maroon',
-      image: 'https://i.imgur.com/wXuQ7bm.jpeg',
+      image: [
+        "https://i.imgur.com/keVCVIa.jpeg",
+        "https://i.imgur.com/afHY7v2.jpeg",
+        "https://i.imgur.com/yAOihUe.jpeg"
+    ],
       starReviews: 5,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
       relatedProducts:[
