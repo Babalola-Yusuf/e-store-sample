@@ -58,7 +58,7 @@ function ProductDescriptionPage() {
                             </div>
                             <div className='more-images flex gap-5'>
                                 {product.image.map((image) =>{
-                                     return <img key={image} src={image} alt={clickedProduct.name} className='max-w-20 shadow-md ' onClick={() => setIsSelected(image)} />
+                                     return <img key={image} src={image} alt={clickedProduct.name} className= {`max-w-20 shadow-md hover:cursor-pointer hover:border-2 hover:border-light-blue ease-linear duration-100 ${isSelected === image ? 'border-2 border-purple': ''} `} onClick={() => setIsSelected(image)} />
                                 })}
                             </div>
                         </div>

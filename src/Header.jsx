@@ -9,7 +9,7 @@ function Header() {
   const {cart} = useContext(cartContext)
     return (
         <div className='bg-white sticky top-0 z-10 p-0 pb-1 shadow-md'>
-            <header className="header flex justify-between p-5 border-2 border-b-light-blue">
+            <header className="header flex justify-between p-5 border-2 border-b-purple">
                 <Link to='/' className=''><img src="./logo-transparent.png" alt="logo" className='h-10 w-20'/></Link>
                 <div className='flex items-center gap-5'>
                     <ul>

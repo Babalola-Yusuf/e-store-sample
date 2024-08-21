@@ -70,13 +70,13 @@ const Cart = () => {
     const total = subTotal - discount + shippingFee;
 
     return (
-        <div>
+        <div className='bg-white-smoke'>
             <Header/>
              <h2 className='text-3xl'>Cart</h2>
              <div className='md:flex'>
-             <div className='md:border-r pr-5 mr-5 flex flex-col items-center md:items-start'>
+             <div className=' md:border-r border-light-brown pr-5 mr-5 flex flex-col items-center md:items-start'>
                 {cart.map((item) => (
-                        <div key={item.id} className=' mb-5 md:flex md:gap-5 md:items-center border-b border-l p-2.5 md:p-5 '>
+                        <div key={item.id} className=' mb-5 md:flex md:gap-5 md:items-cente border-light-brown border-b border-l p-2.5 md:p-5 '>
                             <img src={item.image} alt={item.name} className='max-w-80' />
                             <div className='md:w-fit flex gap-5 justify-between items-center '>
                                 <div className=' flex flex-col gap-4'>
@@ -99,13 +99,13 @@ const Cart = () => {
                         </div>
                 ))}
             </div>
-            <div className='border-2 border-blue-700 p-5 h-max' >
+            <div className='border-2 border-blue-700 p-5 h-max flex flex-col gap-2' >
                     <h3 className='font-bold' >Cart Summary</h3>
                     <p className='flex gap-5 justify-between'> Sub-total <span className='w-24'>{formatPrice(subTotal)} </span> </p>
                     <p className='flex gap-5 justify-between'>discount <span className='w-24'>{formatPrice(discount)}</span> </p>
                     <p className='flex gap-5 justify-between'>shipping fee <span className='w-24'>{formatPrice(shippingFee)}</span> </p>
-                    <p className='flex gap-5 justify-between'>Total <span className='w-24'>{formatPrice(total)}</span> </p>
-                    <button>Proceed to checkout</button>     
+                    <p className='flex gap-5 justify-between border-y-2 border-purple'>Total <span className='w-24'>{formatPrice(total)}</span> </p>
+                    <button className='border rounded border-light-brown '>Proceed to checkout</button>     
             </div>
              </div>
             
