@@ -17,7 +17,7 @@ function Header() {
 
                             <Link to = "/cart">
                             { cart.length > 0 && (
-                            <div>
+                            <div className='duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:translate-y-1 active:scale-x-110 active:scale-y-90'>
                                 <div className='animate-pulse absolute -top-4 -right-4 bg-purple w-5 h-5 rounded-full flex justify-center items-center'>
                                     <p className=' font-bold text-white'>{cart.length} </p>
                                 </div>

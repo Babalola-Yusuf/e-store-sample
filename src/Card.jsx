@@ -55,7 +55,7 @@ export const Card = () => {
                         </div>
                         <div>
                             <button
-                                className="border border-light-brown shadow-md hover:bg-light-blue font-bold py-1 px-2 rounded flex gap-2 items-center justify-center mt-1"
+                                className="border border-light-brown shadow-md hover:bg-light-blue font-bold py-1 px-2 rounded flex gap-2 items-center justify-center mt-1 duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:translate-y-1 active:scale-x-110 active:scale-y-90"
                                 onClick={() => onAddToCart(product)}
                             >
                                 Add to cart <span className="text-purple group-hover:animate-pulse group-hover:text-xl"><FontAwesomeIcon icon={faCartShopping} /></span>
