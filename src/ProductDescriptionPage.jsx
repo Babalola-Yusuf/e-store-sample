@@ -47,7 +47,7 @@ function ProductDescriptionPage() {
                 <div className='md:flex gap-5 mb-5 max-w-96'>   
                     <img src={isSelected} alt={clickedProduct.name} className='shadow-xl' />
                     <div className='flex flex-col gap-5 mt-5'>
-                        <div className='flex gap-5'>
+                        <div className='flex gap-5'> 
                             <div className='p-5 flex flex-col gap-5 w-60 border border-light-brown shadow-md'>
                                 <h1>{clickedProduct.name}</h1>
                                 <p className='flex justify-between'>Price: <span className='w-14'>{clickedProduct.price}</span></p>
