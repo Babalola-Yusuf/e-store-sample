@@ -1,6 +1,5 @@
 import { useState,createContext } from "react";
 import Card from "./Card";
-import Header from "./Header";
 import Footer from "./Footer";
 
 export const ProductsContext = createContext();
@@ -219,7 +218,6 @@ export const ProductPageProvider = ({ children }) => {
 const ProductPage = () => {
     return (
       <div className="bg-white-smoke">
-        <Header/>
         <Card />
         <Footer/>
       </div>

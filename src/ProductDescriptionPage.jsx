@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from 'react';
-import Header from './Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { cartContext } from "./Cart";
@@ -32,7 +31,6 @@ function ProductDescriptionPage() {
     if (!clickedProduct) {
         return (
             <div>
-                <Header />
                 <p>No product selected</p>
                 <Footer />
             </div>
@@ -41,7 +39,6 @@ function ProductDescriptionPage() {
 
     return (
         <div>
-            <Header />
             <div className='p-2.5 md:p-5 bg-white-smoke'>
                 <h1 className='font-bold text-3xl mb-5'>{clickedProduct.name}</h1>
                 <div className='md:flex gap-5 mb-5 max-w-96'>   

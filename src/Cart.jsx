@@ -1,6 +1,5 @@
 import React from 'react'
 import { createContext, useContext, useState, useEffect } from 'react'
-import Header from './Header';
 import Footer from './Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -71,7 +70,6 @@ const Cart = () => {
 
     return (
         <div className='bg-white-smoke'>
-            <Header/>
              <h2 className='text-3xl'>Cart</h2>
              <div className='md:flex'>
              <div className=' md:border-r border-light-brown pr-5 mr-5 flex flex-col items-center md:items-start md:shadow-md'>
