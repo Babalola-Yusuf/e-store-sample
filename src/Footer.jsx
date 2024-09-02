@@ -13,7 +13,7 @@ function Footer() {
     return (
         <div>
             <div className='pre-footer pt-5 bg-light-brown'>
-                <h4 className='ml-10'>Subscribe to our newsletter</h4>
+                <h4 className='ml-10 text-white'>Subscribe to our newsletter</h4>
                 <form className="flex gap-5 mb-5 p-5 justify-center">
                     <input type="text" placeholder="Enter your email" className='px-3' />
                     <button type="submit" className='border border-white bg-purple-800 text-white px-2 py-1'>Subscribe</button>

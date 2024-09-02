@@ -18,22 +18,68 @@ const productsArray = [
     ], 
       starReviews: 3,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Men's T-Shirt",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 25.99,
+        "SKU": "CMTS-01234"
+      },
       relatedProducts:[
         {id: 5, name: 'related product 1', price: '2000', color: 'red', image: [
        "https://i.imgur.com/cBuLvBi.jpeg",
         "https://i.imgur.com/N1GkCIR.jpeg",
         "https://i.imgur.com/kKc9A5p.jpeg"
-      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?'},
+      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      }},
         {id: 6, name: 'related product 2', price: '3000', color: 'purple', image: [
           "https://i.imgur.com/KeqG6r4.jpeg",
           "https://i.imgur.com/xGQOw3p.jpeg",
           "https://i.imgur.com/oO5OUjb.jpeg"
-      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?' },
+      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Men's T-Shirt",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 25.99,
+        "SKU": "CMTS-01234"
+      }
+     },
         {id: 7, name: 'related product 3', price: '4000', color: 'pink', image: [
           "https://i.imgur.com/KeqG6r4.jpeg",
           "https://i.imgur.com/xGQOw3p.jpeg",
           "https://i.imgur.com/oO5OUjb.jpeg"
-      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?'}
+      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+    specification:{
+      "name": "Casual Men's T-Shirt",
+      "material": "100% Organic Cotton",
+      "fit": "Regular",
+      "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+      "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+      "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+      "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+      "price": 25.99,
+      "SKU": "CMTS-01234"
+    }
+    }
       ]
     },
     {
@@ -48,22 +94,68 @@ const productsArray = [
     ],
       starReviews: 4,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      },     
       relatedProducts:[
         {id: 3, name: 'related product 1', price: '2000', color: 'red', image: [
           "https://i.imgur.com/R3iobJA.jpeg",
           "https://i.imgur.com/Wv2KTsf.jpeg",
           "https://i.imgur.com/76HAxcA.jpeg"
-      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips'},
+      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      }
+    },
         {id: 4, name: 'related product 2', price: '3000', color: 'purple', image: [
           "https://i.imgur.com/cBuLvBi.jpeg",
           "https://i.imgur.com/N1GkCIR.jpeg",
           "https://i.imgur.com/kKc9A5p.jpeg"
-      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+    specification:{
+      "name": "Casual Men's T-Shirt",
+      "material": "100% Organic Cotton",
+      "fit": "Regular",
+      "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+      "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+      "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+      "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+      "price": 25.99,
+      "SKU": "CMTS-01234"
+    }},
         {id: 5, name: 'related product 3', price: '4000', color: 'pink', image: [
           "https://i.imgur.com/KeqG6r4.jpeg",
           "https://i.imgur.com/xGQOw3p.jpeg",
           "https://i.imgur.com/oO5OUjb.jpeg"
-      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      }
+    },
       ]
     },
     {
@@ -78,22 +170,69 @@ const productsArray = [
     ],
       starReviews: 5,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      },
       relatedProducts:[
         {id: 1, name: 'related product 1', price: '2000', color: 'red', image: [
           "https://i.imgur.com/KeqG6r4.jpeg",
           "https://i.imgur.com/xGQOw3p.jpeg",
           "https://i.imgur.com/oO5OUjb.jpeg"
-      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips'},
+      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips',
+      specification:{
+        "name": "Casual Men's T-Shirt",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 25.99,
+        "SKU": "CMTS-01234"
+      },
+    },
         {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: [
           "https://i.imgur.com/R3iobJA.jpeg",
           "https://i.imgur.com/Wv2KTsf.jpeg",
           "https://i.imgur.com/76HAxcA.jpeg"
-      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+      specification:{
+        "name": "Casual Men's T-Shirt",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 25.99,
+        "SKU": "CMTS-01234"
+      },
+    },
         {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: [
           "https://i.imgur.com/cBuLvBi.jpeg",
           "https://i.imgur.com/N1GkCIR.jpeg",
           "https://i.imgur.com/kKc9A5p.jpeg"
-      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'}
+      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      },
+    }
       ]
     },
     {
@@ -108,23 +247,70 @@ const productsArray = [
     ],
       starReviews: 2,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Men's T-Shirt",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 25.99,
+        "SKU": "CMTS-01234"
+      },
       relatedProducts:[
         {id: 1, name: 'related product 1', price: '2000', color: 'red', image: [
           "https://i.imgur.com/Y54Bt8J.jpeg",
           "https://i.imgur.com/SZPDSgy.jpeg",
           "https://i.imgur.com/sJv4Xx0.jpeg"
-      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips'},
+      ], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips',
+    specification:{
+      "name": "Casual Men's T-Shirt",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 25.99,
+        "SKU": "CMTS-01234"
+  
+    }},
         {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: [
           "https://i.imgur.com/9DqEOV5.jpeg",
           "https://i.imgur.com/ae0AEYn.jpeg",
           "https://i.imgur.com/mZ4rUjj.jpeg"
-      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+      ], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      }
+    },
         {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: [
             "https://i.imgur.com/9DqEOV5.jpeg",
             "https://i.imgur.com/ae0AEYn.jpeg",
             "https://i.imgur.com/mZ4rUjj.jpeg"
       
-      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+      ], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      }
+    },
       ]
     },
     {
@@ -139,10 +325,57 @@ const productsArray = [
     ],
       starReviews: 4,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Men's T-Shirt",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 25.99,
+        "SKU": "CMTS-01234"
+      },
       relatedProducts:[
-        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips'},
-        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
-        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips',
+          specification:{
+            "name": "Casual Men's T-Shirt",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 25.99,
+            "SKU": "CMTS-01234"
+          }
+        },
+        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Men's T-Shirt",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 25.99,
+            "SKU": "CMTS-01234"
+          }
+        },
+        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Men's T-Shirt",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 25.99,
+            "SKU": "CMTS-01234"
+          }
+        },
       ]
     },
     {
@@ -157,10 +390,57 @@ const productsArray = [
     ],
       starReviews: 1,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      },
       relatedProducts:[
-        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips'},
-        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
-        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips',
+          specification:{
+            "name": "Casual Women's Dress",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 35.99,
+            "SKU": "CWDS-01234"
+          }
+        },
+        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Women's Dress",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 35.99,
+            "SKU": "CWDS-01234"
+          }
+        },
+        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Women's Dress",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 35.99,
+            "SKU": "CWDS-01234"
+          }
+        },
       ]
     },
     {
@@ -175,10 +455,57 @@ const productsArray = [
     ],
       starReviews: 4,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Men's Sweater",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 15.99,
+        "SKU": "CMSW-01234"
+      },
       relatedProducts:[
-        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips'},
-        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
-        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips',
+          specification:{
+            "name": "Casual Men's Sweater",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 15.99,
+            "SKU": "CMSW-01234"
+          }
+        },
+        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Men's Sweater",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 15.99,
+            "SKU": "CMSW-01234"
+          }
+        },
+        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Men's Sweater",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 15.99,
+            "SKU": "CMSW-01234"
+          }
+        },
       ]
     },
     {
@@ -193,10 +520,58 @@ const productsArray = [
     ],
       starReviews: 5,
       description:'  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iure harum. Impedit, eligendi? Ab dolor dolores pariatur?',
+      specification:{
+        "name": "Casual Women's Dress",
+        "material": "100% Organic Cotton",
+        "fit": "Regular",
+        "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+        "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+        "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+        "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+        "price": 35.99,
+        "SKU": "CWDS-01234"
+      },
       relatedProducts:[
-        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips'},
-        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
-        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur'},
+        {id: 1, name: 'related product 1', price: '2000', color: 'red', image: ['https://i.imgur.com/e8tVZ2v.jpeg'], starReviews: 2, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ips',
+          specification:{
+            "name": "Casual Women's Dress",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 35.99,
+            "SKU": "CWDS-01234"
+          }
+        },
+        {id: 2, name: 'related product 2', price: '3000', color: 'purple', image: ['https://i.imgur.com/c9o9w5Q.jpeg'], starReviews: 3, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Women's Dress",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 35.99,
+            "SKU": "CWDS-01234"
+          }
+        },
+        
+        {id: 3, name: 'related product 3', price: '4000', color: 'pink', image: ['https://i.imgur.com/ZKGofuB.jpeg'], starReviews: 4, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque dolores neque, veritatis dignissimos non, recusandae saepe blanditiis impedit eum ipsa eius iur',
+          specification:{
+            "name": "Casual Women's Dress",
+            "material": "100% Organic Cotton",
+            "fit": "Regular",
+            "sizesAvailable": ["S", "M", "L", "XL", "XXL"],
+            "colorOptions": ["Navy Blue", "Charcoal Grey", "Olive Green", "Maroon", "White"],
+            "features": ["Breathable fabric", "Pre-shrunk", "Double-stitched seams"],
+            "careInstructions": ["Machine wash cold", "Tumble dry low", "Do not bleach"],
+            "price": 35.99,
+            "SKU": "CWDS-01234"
+          }
+        },
       ]
     },
   ];

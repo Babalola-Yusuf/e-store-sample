@@ -13,7 +13,7 @@ const Breadcrumb = () => {
   const paths = location.pathname.split('/').filter(path => path);
 
   return (
-    <nav>
+    <nav className="bg-white-smoke">
       <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
         <li>
           <Link to="/">Home</Link>

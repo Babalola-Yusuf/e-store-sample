@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { cartContext } from "./Cart";
 import { ProductsContext } from './ProductPage';
-import { useLocation, useNavigate } from 'react-router-dom'; // Combined import
+import { useLocation, useNavigate } from 'react-router-dom'; 
 import Footer from './Footer';
 
 function ProductDescriptionPage() {
@@ -14,13 +14,13 @@ function ProductDescriptionPage() {
     const navigate = useNavigate();
     const [clickedProduct, setClickedProduct] = useState(null);
     const [productNavButton, setProductNavButton] = useState('productDescription');
-    const [isSelected, setIsSelected] = useState(product?.image[0]);
+    const [isSelected, setIsSelected] = useState(product?.image?.[0]);
 
     useEffect(() => {
         if (product) {
             const detailedProduct = onShowDescription(product); 
             setClickedProduct(detailedProduct);
-            setIsSelected(detailedProduct?.image[0]);
+            setIsSelected(detailedProduct?.image?.[0]);
         }
     }, [product, onShowDescription]);
 
@@ -42,7 +42,9 @@ function ProductDescriptionPage() {
             <div className='p-2.5 md:p-5 bg-white-smoke'>
                 <h1 className='font-bold text-3xl mb-5'>{clickedProduct.name}</h1>
                 <div className='md:flex gap-5 mb-5 max-w-96'>   
-                    <img src={isSelected} alt={clickedProduct.name} className='shadow-xl' />
+                    {isSelected && (
+                        <img src={isSelected} alt={clickedProduct.name} className='shadow-xl' />
+                    )}
                     <div className='flex flex-col gap-5 mt-5'>
                         <div className='flex gap-5'> 
                             <div className='p-5 flex flex-col gap-5 w-60 border border-light-brown shadow-md'>
@@ -61,7 +63,7 @@ function ProductDescriptionPage() {
                             </div>
                         </div>
                         <div className='more-images flex gap-5'>
-                            {clickedProduct.image.map((image) => (
+                            {clickedProduct.image?.map((image) => (
                                 <img
                                     key={image}
                                     src={image}
@@ -74,7 +76,7 @@ function ProductDescriptionPage() {
                     </div>
                 </div>
                 <div className='flex justify-center'>
-                    <div className='w-3/4'>
+                    <div className='md:w-3/4'>
                         <div className='flex gap-5'>
                             <label className='hover:cursor-pointer focus-within:border-b-2 border-blue-400 ease-in-out duration-100'>
                                 <input 
@@ -109,7 +111,45 @@ function ProductDescriptionPage() {
                             {productNavButton === 'productSpecification' && (
                                 <div className='border-t-2 border-purple p-5'>
                                     <h2 className='font-bold'>Product specification</h2>
-                                    <p>{clickedProduct.specification}</p>
+                                    <div className='md:flex gap-5'>
+                                        <div className='mb-5'>
+                                            <p>name: {clickedProduct.specification?.name}</p>
+                                            <p>fit: {clickedProduct.specification?.fit}</p>
+                                            <p>Brand: {clickedProduct.specification?.brand}</p>
+                                            <p>Material: {clickedProduct.specification?.material}</p>
+                                        </div>
+                                        <div className='text-sm'>
+                                            <h3>Additional features:</h3>
+                                            <div className='flex gap-5 items-center mb-2'>
+                                                <p className='w-24 sm:w-40 bg-dark-brown text-white-smoke pl-1'>size:</p>
+                                                <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
+                                                    {clickedProduct.specification?.sizesAvailable?.map((size, index) => (
+                                                        <li key={index}>{size}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            
+                                            <div className='flex gap-5 items-center mb-2'>
+                                                <p className='w-24 sm:w-40 bg-light-brown text-white-smoke pl-1'>Color options:</p>
+                                                <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
+                                                    {clickedProduct.specification?.colorOptions?.map((colorOption, index) => (
+                                                        <li key={index}>{colorOption}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+
+                                            <div className='flex gap-5 items-center mb-2'>
+                                                <p className='w-24 sm:w-40 bg-dark-brown text-white-smoke pl-1'>Features:</p>
+                                                <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
+                                                    {clickedProduct.specification?.features?.map((feature, index) => (
+                                                        <li key={index}>{feature}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             )}
                         </div> 
