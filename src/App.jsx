@@ -15,15 +15,18 @@ const Breadcrumb = () => {
   return (
     <nav className="bg-white-smoke">
       <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
-        <li>
+        <li className="hover:text-light-blue">
           <Link to="/">Home</Link>
         </li>
         {paths.map((path, index) => {
           const to = `/${paths.slice(0, index + 1).join('/')}`;
           return (
-            <li key={to} style={{ marginLeft: '10px' }}>
+            <li key={to} style={{ marginLeft: '10px' }} className="flex gap-2" >
               <span> &gt; </span>
-              <Link to={to}>{path.replace('-', ' ')}</Link>
+              <div className="hover:text-light-blue">
+                <Link to={to}>{path.replace('-', ' ')}</Link>
+              </div>
+              
             </li>
           );
         })}

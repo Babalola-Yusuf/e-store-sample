@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import { cartContext } from "./Cart";
+import { cartContext } from './Cart';
 import { ProductsContext } from './ProductPage';
 import { useLocation, useNavigate } from 'react-router-dom'; 
 import Footer from './Footer';
@@ -18,7 +18,7 @@ function ProductDescriptionPage() {
 
     useEffect(() => {
         if (product) {
-            const detailedProduct = onShowDescription(product); 
+            const detailedProduct = onShowDescription(product);
             setClickedProduct(detailedProduct);
             setIsSelected(detailedProduct?.image?.[0]);
         }
@@ -26,7 +26,7 @@ function ProductDescriptionPage() {
 
     const handleProductClick = (relatedProduct) => {
         navigate('/product-page', { state: { product: relatedProduct } });
-    }
+    };
 
     if (!clickedProduct) {
         return (
@@ -67,7 +67,7 @@ function ProductDescriptionPage() {
                                 <img
                                     key={image}
                                     src={image}
-                                    alt={clickedProduct.name}
+                                    alt={`${clickedProduct.name} ${image}`}
                                     className={`max-w-20 shadow-md hover:cursor-pointer hover:border-2 hover:border-light-blue ease-linear duration-100 ${isSelected === image ? 'border-2 border-purple' : ''}`}
                                     onClick={() => setIsSelected(image)}
                                 />
@@ -113,39 +113,45 @@ function ProductDescriptionPage() {
                                     <h2 className='font-bold'>Product specification</h2>
                                     <div className='md:flex gap-5'>
                                         <div className='mb-5'>
-                                            <p>name: {clickedProduct.specification?.name}</p>
-                                            <p>fit: {clickedProduct.specification?.fit}</p>
+                                            <p>Name: {clickedProduct.specification?.name}</p>
+                                            <p>Fit: {clickedProduct.specification?.fit}</p>
                                             <p>Brand: {clickedProduct.specification?.brand}</p>
                                             <p>Material: {clickedProduct.specification?.material}</p>
                                         </div>
                                         <div className='text-sm'>
                                             <h3>Additional features:</h3>
-                                            <div className='flex gap-5 items-center mb-2'>
-                                                <p className='w-24 sm:w-40 bg-dark-brown text-white-smoke pl-1'>size:</p>
-                                                <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
-                                                    {clickedProduct.specification?.sizesAvailable?.map((size, index) => (
-                                                        <li key={index}>{size}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                                            {clickedProduct.specification?.sizesAvailable && (
+                                                <div className='flex gap-5 items-center mb-2'>
+                                                    <p className='w-24 sm:w-40 bg-dark-brown text-white-smoke pl-1'>Size:</p>
+                                                    <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
+                                                        {clickedProduct.specification.sizesAvailable.map((size, index) => (
+                                                            <li key={index}>{size}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
                                             
-                                            <div className='flex gap-5 items-center mb-2'>
-                                                <p className='w-24 sm:w-40 bg-light-brown text-white-smoke pl-1'>Color options:</p>
-                                                <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
-                                                    {clickedProduct.specification?.colorOptions?.map((colorOption, index) => (
-                                                        <li key={index}>{colorOption}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                                            {clickedProduct.specification?.colorOptions && (
+                                                <div className='flex gap-5 items-center mb-2'>
+                                                    <p className='w-24 sm:w-40 bg-light-brown text-white-smoke pl-1'>Color options:</p>
+                                                    <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
+                                                        {clickedProduct.specification.colorOptions.map((colorOption, index) => (
+                                                            <li key={index}>{colorOption}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
 
-                                            <div className='flex gap-5 items-center mb-2'>
-                                                <p className='w-24 sm:w-40 bg-dark-brown text-white-smoke pl-1'>Features:</p>
-                                                <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
-                                                    {clickedProduct.specification?.features?.map((feature, index) => (
-                                                        <li key={index}>{feature}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                                            {clickedProduct.specification?.features && (
+                                                <div className='flex gap-5 items-center mb-2'>
+                                                    <p className='w-24 sm:w-40 bg-dark-brown text-white-smoke pl-1'>Features:</p>
+                                                    <ul className='flex gap-1 md:gap-2 bg-white px-1 w-full'>
+                                                        {clickedProduct.specification.features.map((feature, index) => (
+                                                            <li key={index}>{feature}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
                                             
                                         </div>
                                     </div>

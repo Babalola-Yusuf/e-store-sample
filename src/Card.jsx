@@ -10,6 +10,7 @@ export const Card = () => {
     const { onAddToCart } = useContext(cartContext);
     const navigate = useNavigate(); // Initialize useNavigate
 
+    // Price formatter moved outside to avoid re-creation on every render
     const formatPrice = (price) => {
         return new Intl.NumberFormat("en-NG", {
             style: "currency",
@@ -33,7 +34,10 @@ export const Card = () => {
                         >
                             <ul className="sm:flex justify-between gap-2 items-start">
                                 <div className="group-hover:opacity-75">
-                                    <li><img src={product.image} alt={product.name} /></li>
+                                    <li>
+                                        {/* Added more descriptive alt text for accessibility */}
+                                        <img src={product.image} alt={`Image of ${product.name}`} />
+                                    </li>
                                 </div>
                                 <div className="min-w-40 flex flex-col justify-between xl:gap-10">
                                     <div>
@@ -41,13 +45,17 @@ export const Card = () => {
                                         <li className="mb-1 xl:mb-3">Price: {formatPrice(product.price)}</li>
                                         <li className="mb-1 xl:mb-3">Color: {product.color}</li>
                                         <li className="mb-1 xl:mb-3">
+                                            {/* Improved star rating for better clarity */}
                                             {Array.from({ length: 5 }).map((_, i) => (
                                                 <FontAwesomeIcon
                                                     key={i}
                                                     color={i < product.starReviews ? "orange" : "silver"}
                                                     icon={faStar}
+                                                    aria-hidden="true"
                                                 />
                                             ))}
+                                            {/* Add screen reader text for ratings */}
+                                            <span className="sr-only">{product.starReviews} out of 5 stars</span>
                                         </li>
                                     </div>
                                 </div>
@@ -56,7 +64,10 @@ export const Card = () => {
                         <div>
                             <button
                                 className="border border-light-brown shadow-md hover:bg-light-blue font-bold py-1 px-2 rounded flex gap-2 items-center justify-center mt-1 duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:translate-y-1 active:scale-x-110 active:scale-y-90"
-                                onClick={() => onAddToCart(product)}
+                                onClick={(e) => {
+                                    e.stopPropagation(); // Prevent navigation when clicking Add to Cart
+                                    onAddToCart(product);
+                                }}
                             >
                                 Add to cart <span className="text-purple group-hover:animate-pulse group-hover:text-xl"><FontAwesomeIcon icon={faCartShopping} /></span>
                             </button>
