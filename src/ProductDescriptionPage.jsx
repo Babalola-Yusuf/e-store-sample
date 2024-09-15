@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { cartContext } from './Cart';
-import { ProductsContext } from './ProductPage';
+import { ProductsContext } from "./ProductManager"; // Correct import from ProductManager
 import { useLocation, useNavigate } from 'react-router-dom'; 
 import Footer from './Footer';
 
